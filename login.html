@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Masuk — Kumpulan Komik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">KM</div>
+      <div>
+        <div class="site-title">Kumpulan Komik</div>
+        <div class="site-sub">Manhwa &amp; Donghua</div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-btn ghost" href="index.html">Beranda</a>
+      <a class="nav-btn primary" href="login.html">Masuk / Daftar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card" style="max-width:560px;margin:0 auto">
+      <h2>Masuk</h2>
+      <p class="lead">Masuk untuk menambah atau mengelola entri (tampilan saja).</p>
+
+      <form class="form" action="#" method="post" onsubmit="return false;">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="••••••" required>
+
+        <div class="actions">
+          <a class="btn ghost" href="index.html">Batal</a>
+          <a class="btn primary" href="dashboard.html">Masuk</a>
+
+        </div>
+      </form>
+
+      <div style="margin-top:12px" class="muted">
+        Belum punya akun? <a href="register.html">Daftar di sini</a>.
+      </div>
+    </div>
+  </main>
+</body>
+</html>

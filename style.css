@@ -1,0 +1,113 @@
+/* style.css
+   Tema: gelap, aksen biru-ungu, pure CSS untuk semua halaman
+*/
+:root{
+  --bg: #071022;
+  --card: #0b1220;
+  --muted: #97a0b3;
+  --accent-1: #7c5cff;
+  --accent-2: #5fb7ff;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 12px;
+  --text: #e6eef8;
+  --success: #22c55e;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:
+ linear-gradient(180deg,var(--bg),#04111a 70%); color:var(--text); -webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none}
+header{
+  display:flex;align-items:center;justify-content:space-between;padding:18px 28px;
+  backdrop-filter: blur(6px);
+  background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
+  position:sticky;top:0;z-index:10;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:44px;height:44px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent-1),var(--accent-2));
+  color:#021027;font-weight:800;display:flex;align-items:center;justify-content:center;
+}
+.site-title{font-weight:800;line-height:1}
+.site-sub{font-size:12px;color:var(--muted)}
+
+nav{display:flex;gap:10px;align-items:center}
+.nav-btn{
+  padding:8px 12px;border-radius:10px;font-weight:700;border:1px solid rgba(255,255,255,0.03)
+}
+.nav-btn.primary{background:linear-gradient(90deg,var(--accent-1),var(--accent-2));color:#021027}
+.nav-btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04)}
+
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(3,7,18,0.6)}
+.lead{color:var(--muted);margin-top:6px;margin-bottom:12px}
+
+.list{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:12px
+}
+.item{background:var(--glass);padding:10px;border-radius:10px;display:flex;flex-direction:column;gap:8px}
+.cover{
+  height:220px;border-radius:8px;background:linear-gradient(180deg,#0b1220,#06101a);
+  display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:800;font-size:20px;overflow:hidden;
+}
+.item .title{font-weight:800}
+.meta{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--muted)}
+.tag{padding:4px 8px;background:rgba(255,255,255,0.03);border-radius:999px;font-weight:700;text-transform:uppercase;font-size:12px}
+
+.filter-row{display:flex;gap:10px;align-items:center;margin-top:12px}
+.select, .search{
+  background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:var(--text)
+}
+.search{flex:1}
+
+.profile{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.profile .name{font-weight:800}
+.profile .muted{color:var(--muted);font-size:13px}
+
+.form{display:flex;flex-direction:column;gap:10px}
+label{font-size:13px;color:var(--muted)}
+input[type="text"], input[type="password"], textarea, select{
+  background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:var(--text);
+}
+textarea{min-height:110px}
+.row{display:flex;gap:10px}
+.col{flex:1}
+
+.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
+button, .btn{
+  padding:10px 12px;border-radius:10px;border:0;font-weight:800;cursor:pointer;
+}
+.btn.primary{background:var(--accent-1);color:#021027}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04)}
+
+.notice{padding:8px;border-radius:8px;font-size:13px}
+.notice.error{background:rgba(255,0,0,0.06);border:1px solid rgba(255,0,0,0.08);color:#ffb3b3}
+.notice.ok{background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.08);color:var(--success)}
+
+/* small helpers */
+.center{display:flex;align-items:center;justify-content:center}
+.muted{color:var(--muted);font-size:13px}
+
+/* footer */
+footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted)}
+
+/* responsive */
+@media (max-width:980px){
+  .grid{grid-template-columns:1fr}
+  .cover{height:160px}
+}
+@media (max-width:520px){
+  header{padding:12px}
+  .logo{width:36px;height:36px}
+}
+.nav-btn.danger,
+.btn.danger {
+  background: #d9534f;
+  color: white;
+}
+.nav-btn.danger:hover,
+.btn.danger:hover {
+  background: #b52b27;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumpulan Komik — Beranda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">KM</div>
+      <div>
+        <div class="site-title">Kumpulan Komik</div>
+        <div class="site-sub">Manhwa &amp; Donghua</div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-btn ghost" href="index.html">Beranda</a>
+      <a class="nav-btn primary" href="login.html">Masuk / Daftar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div>
+        <div class="card">
+          <h2>Terbaru</h2>
+          <p class="lead">Kumpulan manhwa &amp; donghua terbaru. Contoh kartu hanya untuk tampilan.</p>
+
+          <div class="filter-row">
+            <select class="select" aria-label="Filter tipe">
+              <option>Semua</option>
+              <option>Manhwa</option>
+              <option>Donghua</option>
+            </select>
+            <input class="search" type="text" placeholder="Cari judul..." aria-label="Cari">
+          </div>
+
+          <div class="list" style="margin-top:12px">
+            <!-- Dummy cards -->
+            <div class="item">
+              <div class="cover">SL</div>
+              <div class="title">Solo Leveling</div>
+              <div class="meta"><div class="muted">Action, Fantasy</div><div class="tag">Manhwa</div></div>
+            </div>
+
+            <div class="item">
+              <div class="cover">KA</div>
+              <div class="title">The King's Avatar</div>
+              <div class="meta"><div class="muted">Game, Drama</div><div class="tag">Donghua</div></div>
+            </div>
+
+            <div class="item">
+              <div class="cover">TF</div>
+              <div class="title">Tower of God</div>
+              <div class="meta"><div class="muted">Fantasy</div><div class="tag">Manhwa</div></div>
+            </div>
+
+            <div class="item">
+              <div class="cover">LD</div>
+              <div class="title">Legend of the Galactic Heroes</div>
+              <div class="meta"><div class="muted">Sci-Fi, Drama</div><div class="tag">Donghua</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+    </section>
+  </main>
+</body>
+</html>

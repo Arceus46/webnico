@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tambah Manhwa — Kumpulan Komik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">KM</div>
+      <div>
+        <div class="site-title">Kumpulan Komik</div>
+        <div class="site-sub">Manhwa &amp; Donghua</div>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-btn ghost" href="dashboard.html">Beranda</a>
+      <a class="nav-btn ghost" href="tm.html">Tambah Manhwa</a>
+      <a class="nav-btn ghost" href="td.html">Tambah Donghua</a>
+      <a class="nav-btn primary" href="dashboard.html">Profil Saya</a>
+      <a class="nav-btn danger" href="login.html">Keluar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card" style="max-width:720px;margin:0 auto">
+      <h2>Tambah Manhwa</h2>
+
+      <form class="form" action="#" method="post" onsubmit="return false;">
+        <label>Judul</label>
+        <input type="text" name="title" placeholder="Judul manhwa" required>
+
+        <label>Deskripsi</label>
+        <textarea name="desc" placeholder="Ringkasan singkat"></textarea>
+
+        <div class="row">
+          <div class="col">
+            <label>Genre</label>
+            <input type="text" name="genre" placeholder="Contoh: Action, Fantasy">
+          </div>
+          <div class="col">
+            <label>Link Cover (URL)</label>
+            <input type="text" name="cover" placeholder="https://...">
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="btn ghost" href="index.html">Batal</a>
+          <button class="btn primary" type="submit">Tambah Manhwa</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
